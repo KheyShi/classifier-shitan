@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airlines Customer satisfaction</title>
+</head>
+
+<body>
+    <form action="response" method="post" enctype="multipart/form-data">
+    <label for ="ct">Customer Type:</label>
+    <select id="ct" name="ct">
+        <option selected disabled hidden>Choose</option>
+        <option value="Loyal Customer">Loyal Customer</option>
+        <option value="Disloyal Customer">Disloyal Customer</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="travel">Type of Travel</label>
+    <select id="travel" name="travel">
+        <option selected disabled hidden>Choose</option>
+        <option value="Personal Travel">Personal Travel</option>
+        <option value="Business Travel">Business Travel</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="class">Class:</label>
+    <select id="class" name="class">
+        <option selected disabled hidden>Choose</option>
+        <option value="Business">Business</option>
+        <option value="Eco">Eco</option>
+        <option value="Eco Plus">Eco Plus</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="comfort">Seat Comfort:</label>
+    <select id="comfort" name="comfort">
+        <option selected disabled hidden>Choose</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="food">Food and drink:</label>
+    <select id="food" name="food">
+        <option selected disabled hidden>Choose</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="ent">Inflight Entertainment:</label>
+    <select id="ent" name="ent">
+        <option selected disabled hidden>Choose</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+
+    <label for ="ease">Ease of Online Booking</label>
+    <select id="ease" name="ease">
+        <option selected disabled hidden>Choose</option>
+        <option value="0">0</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+    </select>
+    <br>
+    <br>
+
+    <div>
+        <label for="classifier">classifier</label><br>
+        
+        <input type="radio" id="naive" name="classifier" value="Naive Bayes">
+        <label for="naive">Naive Bayes</label><br>
+        <input type="radio" id="tree" name="classifier" value="Decision Tree">
+        <label for="tree">Decision Tree</label><br>
+        
+        <br>
+        
+        </div>
+
+        <div class="input_file_upload">
+            <input type="file" name="input_file" id="input_file">
+        </div>
+        <br>
+        <br>
+    
+        <div class="form_section">
+            <button type="submit">Classify</button>
+        </div>
+        
+        <br> 
+    
+        
+
+    </form>
+</body>
+</html>
