@@ -19,7 +19,7 @@ def index():
     return render_template('index.html')
     
 @app.route('/', methods = ["GET","POST"])
-@app.post("/response.html")
+@app.post("/response")
 def response_page():
     inputs = []
     prediction = ''
